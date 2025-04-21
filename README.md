@@ -8,7 +8,7 @@
 
 ***Steps***:
 1)Clone the repository:
-git clone https://github.com/yourusername/project-name.git
+git clone https://github.com/raghavendragouda775/Assignment/
 
 2)Navigate to the project directory:
 cd project-name
