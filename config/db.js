@@ -10,9 +10,10 @@ const pool = mysql.createPool({
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
   ssl: {
-    ca: fs.readFileSync("C:/Users/raghu/Downloads/schooldb-ssl-public-cert.cert"),  
+    ca: fs.readFileSync("./certs/schooldb-ssl-public-cert.cert"),  
     rejectUnauthorized: false,  
   },
 });
 
 export default pool.promise();
+
