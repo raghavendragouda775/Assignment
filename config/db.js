@@ -15,14 +15,7 @@ const pool = mysql.createPool({
   },
   
 });
-pool.getConnection((err, connection) => {
-    if (err) {
-      console.error("Database connection failed: ", err.stack);
-    } else {
-      console.log("Connected to the database.");
-      connection.release();  // Release the connection after testing.
-    }
-  });
+
 
 export default pool.promise();
 
